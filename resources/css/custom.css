@@ -1,0 +1,363 @@
+/* purgecss start ignore */
+/*@ Swal notification style */
+.swal2-container .swal2-popup.swal2-toast {
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  padding: 10px !important;
+}
+
+/*@ Logo style */
+.logo-wrapper img {
+    height: 70px;
+    object-fit: contain;
+}
+
+/*@ Tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Dropzone css starts*/
+  .vue-dropzone > .dz-preview .dz-details {
+    opacity: 1 !important;
+    position: relative !important;
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+  
+  #customdropzone .dz-preview {
+    width: 20%;
+    display: inline-block;
+  }
+  #customdropzone .dz-preview .dz-image {
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin: 0px auto;
+  }
+  #customdropzone .dz-preview .dz-image > div {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    background-size: contain;
+  }
+  #customdropzone .dz-preview .dz-image > img {
+    width: 100%;
+  }
+  
+  #customdropzone .dz-preview .dz-details {
+    color: white;
+    transition: opacity 0.2s linear;
+    text-align: center;
+  }
+
+  #customdropzone .dz-success-mark,
+  .dz-error-mark,
+  .dz-progress {
+    display: none;
+  }
+  
+  #customdropzone .dz-preview .dz-remove {
+    position: relative!important;
+    opacity: 1!important;
+    color: #000!important;
+    border: none!important;
+    padding: 0px!important;
+    margin: 0px!important;
+  }
+  /* Dropzone css ends*/
+
+  /*@ Start: Checkbox Input */
+  .container:hover input ~ .checkmark {
+    background-color: #a0aec0;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #0078d4;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /*@ End: Checkbox Input */
+
+  .max-h-table {
+    max-height: 300px;
+  }
+
+  .register-checkbox {
+    border-color: black;
+  }
+
+  .google-icon {
+    background-image: url('/images/google.png');
+  }
+  .microsoft-icon {
+    background-image: url('/images/microsoft.png');
+  }
+  
+  .social-buttons {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: 7px;
+    display: inline-block;
+  }
+
+  .custom-class-mfa svg {
+    display: unset;
+  }
+  
+  .custom-class-mfa .swal2-icon {
+    display: none !important;
+  }
+  
+  .mfa_popup {
+    display: block;
+  }
+  
+  .manual-code {
+    font-size: 16px;
+  }
+
+  .swal2-actions {
+    z-index: 0 !important;
+  }
+
+/*
+* Loader css
+*/
+
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+* Loader css
+*/
+
+.common-background {
+  background-color: #d9d9d9;
+}
+
+.btn-custom-color {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.25rem;
+  --bg-opacity: 1;
+  background-color: grey;
+  --text-opacity: 1;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700; 
+  white-space: nowrap
+}
+
+.btn-custom-color:hover, .btn-custom-color:focus {
+  --bg-opacity: 1;
+  background-color: #dc661f;
+}
+
+input[disabled] {
+  background: #EDEDED;
+  color: #333;
+  border: 1px solid #666;
+  cursor: not-allowed;
+}
+
+.walletconnect-modal__headerLogo {
+  height: 21px !important;
+}
+
+.ui.search.dropdown .menu {
+  max-height: 100px !important;
+  overflow: scroll !important;
+}
+
+.loader-bg {
+  background-color: #000;
+  opacity: 0.4;
+}
+
+.md-stepper-description {
+  color: green;
+}
+
+.dis-block {
+  display: block !important;
+}
+
+.tabs-component {
+  margin: 0px !important;
+}
+
+.datepickerdiv input.mx-input {
+  background: #F8FAF6;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0.25rem;
+  height: 3rem;
+}
+
+.datepickerdiv .mx-datepicker {
+  width: 100%;
+}
+
+body .mx-datepicker-popup .mx-calendar-content .cell.active {
+  background: #86B23B;
+  color: #fff !important;
+}
+
+body .mx-datepicker-popup .mx-calendar-content .cell:hover {
+  background: #F1F4EC;
+}
+
+body .mx-datepicker-popup .mx-calendar-content .cell {
+  border-radius: 100%;
+}
+
+body .datepickerdiv i.mx-icon-calendar {
+  background-image: url(/images/datepickericon.svg);
+  background-size: contain;
+  background-position: right;
+}
+
+body .datepickerdiv i.mx-icon-calendar svg {
+  opacity: 0;
+}
+
+.min-h-111 {
+  min-height: 111px;
+}
+
+.custom-button {
+  padding: 5px 10px !important;
+  height: 40px !important;
+}
+
+.swal2-container .swal2-icon {
+  margin-top: 0px;
+  border: 0;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+
+/* TABLE CSS */
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #2778c4;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #2778c4;
+}
+
+/* TABLE CSS */
+
+.error-border {
+  border-color: red;
+}
+
+/* purgecss end ignore */
